@@ -37,10 +37,10 @@ HEADERS += grooveclient.h\
     groovestream_p.h
 
 headers.files = $$HEADERS
-headers.path = /usr/include
+headers.path = $$INSTALL_PREFIX/include
 INSTALLS += headers
 
-target.path = /usr/lib
+target.path = $$INSTALL_PREFIX/lib
 INSTALLS += target
 
 unix {
